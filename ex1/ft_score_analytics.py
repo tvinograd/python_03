@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Demonstrates list usage for collecting, storing, and analyzing player scores."""
+"""Demonstrates list usage for collecting and analyzing player scores."""
 
 
 import sys
