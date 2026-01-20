@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Demonstrates list usage for collecting and analyzing player scores."""
+"""Demonstrates list usage."""
 
 
 import sys
 
 
 def ft_score_analytics() -> None:
-    """Display command-line arguments in a user-friendly format."""
+    """Display command-line arguments."""
     print("=== Player Score Analytics ===")
 
     total_args = len(sys.argv)

@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Demonstrates tuple usage for immutable 3D calculations."""
+"""Demonstrates tuple usage."""
 
 
 import math
 
 
 def calculate_distance(pos: tuple) -> float:
-    """Calculate Euclidean distance."""
+    """Calculate Euclidean distance from (0, 0, 0)."""
     x, y, z = pos
     dist = math.sqrt((x)**2 + (y)**2 + (z)**2)
     print(f"Distance between (0, 0, 0) and {pos}: {dist:.2f}\n")
