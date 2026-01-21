@@ -6,7 +6,7 @@ import sys
 
 
 def ft_score_analytics() -> None:
-    """Display command-line arguments."""
+    """Display command-line arguments and its statistics."""
     print("=== Player Score Analytics ===")
 
     total_args = len(sys.argv)

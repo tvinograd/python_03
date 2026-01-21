@@ -16,7 +16,7 @@ def ft_inventory_system() -> None:
     inventory = {}
     for arg in sys.argv[1:]:
         item, quantity = arg.split(':')
-        inventory[item] = int(quantity)
+        inventory.update({item: int(quantity)})
     total = sum(inventory.values())
     print(f"Total items in inventory: {total}")
     print(f"Unique item types: {len(inventory)}")
@@ -50,6 +50,7 @@ def ft_inventory_system() -> None:
     print(f"Dictionary keys: {list(inventory.keys())}")
     print(f"Dictionary values: {list(inventory.values())}")
     print(f"Sample lookup - 'sword' in inventory: {'sword' in inventory}")
+    print(f"'sword' qty in inventory: {inventory.get('sword')}")
 
 
 if __name__ == "__main__":
@@ -60,5 +61,5 @@ if __name__ == "__main__":
 
 """
 Testing example:
-python3 ft_inventory_system.py sword potion:5 shield:2 armor:3 helmet:1
+python3 ft_inventory_system.py sword:1 potion:5 shield:2 armor:3 helmet:1
 """

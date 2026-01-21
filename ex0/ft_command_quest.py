@@ -6,7 +6,7 @@ import sys
 
 
 def ft_command_quest() -> None:
-    """Display command-line arguments in a user-friendly format."""
+    """Display command-line arguments."""
     print("=== Command Quest ===")
 
     total_args = len(sys.argv)

@@ -14,13 +14,18 @@ def calculate_distance(pos: tuple) -> float:
 
 
 def ft_coordinate_system(pos: tuple | str) -> None:
-    """Main demonstration of 3D coordinate system using tuples."""
+    """3D coordinate system using tuples."""
 
     # If it's already a tuple:
     if isinstance(pos, tuple):
-        print(f"Position created: {pos}")
-        calculate_distance(pos)
-        return
+        try:
+            print(f"Position created: {pos}")
+            calculate_distance(pos)
+            return
+        except Exception as e:
+            print(f"Error: {e}")
+        finally:
+            return
 
     # If it's a string:
     print(f"Parsing coordinates: \"{pos}\"")
